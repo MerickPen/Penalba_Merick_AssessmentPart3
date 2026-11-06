@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>
+        Explore Alberta Trails • Interactive Map
+    </title>
+
+    <meta name="description"
+          content="Find real-time weather and route information for beginner-friendly Alberta trails.">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <meta name="robots"
+          content="index,follow">
+
+    <meta property="og:title"
+          content="Explore Alberta Trails">
+
+    <meta property="og:description"
+          content="Interactive Alberta trail map with live weather data.">
+
+    <meta property="og:type"
+          content="website">
+
+    <link rel="canonical"
+          href="https://example.com/trail-map">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <main id="main">
+
+        <h1>
+            Trailhead Map & Live Weather
+        </h1>
+
+        <section id="hero">
+
+            <picture>
+
+                <source
+                    srcset="waterfall.webp"
+                    type="image/webp">
+
+                <img
+                    src="waterfall.jpg"
+                    alt="Large waterfall flowing through a rocky canyon surrounded by forest in Alberta"
+                    loading="lazy">
+
+            </picture>
+
+        </section>
+
+        <section id="map-container">
+
+            <h2>
+                Trail Location
+            </h2>
+
+            <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-114.2419%2C51.0000%2C-114.0000%2C51.2000&layer=mapnik"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+                sandbox="allow-scripts allow-same-origin">
+
+            </iframe>
+
+            <p>
+                If the map cannot load, please visit OpenStreetMap directly.
+            </p>
+
+        </section>
+
+        <section id="weather-container">
+
+            <h2>
+                Current Weather
+            </h2>
+
+            <div id="weather">
+
+                Loading weather...
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script type="module"
+            src="script.js"></script>
+
+</body>
+
+</html>
